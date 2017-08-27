@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" />
+        <script src="script.js"></script>
+        <script src="draw.js"></script>
+        <script src="colorpicker.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <div>
+            <canvas id="canvas"></canvas>
+        </div>
+        <form class="edit-window">
+            <div class="header-window"></div>
+            <div class="input-block">
+                <label for="layers">Choice of the layer :</label>
+                <select id="layers">
+                    <option value="new_layer">Add a layer</option>
+                </select>
+            </div>
+            <div class="input-block">
+                <label for="color">Color choice : </label>
+                <div id="selectedColor"></div>
+                <div id="colorpickerBlock">
+                    <div id="color" class="color colorpicker"></div>
+                    <div id="slider" class="slider colorpicker"></div>
+                </div>
+            </div>
+            <div class="input-block">
+                <label for="task">Task name : </label>
+                <input id="task" type="text" />
+            </div>
+            <div class="input-block">
+                <label for="description">Task name : </label>
+                <textarea id="description"></textarea>
+            </div>
+            <div class="submit-block">
+                <button id="addLayer">Add</button>
+            </div>
+            <div id="detail">
+                <hr />
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </body>
+</html>
